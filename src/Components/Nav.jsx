@@ -36,16 +36,14 @@ function Nav() {
     <div className="w-full flex justify-center mt-4">
       {/* Desktop nav */}
       <div className="hidden md:flex text-gray-500 rounded-2xl px-8 py-3 space-x-10 shadow-lg">
-        <Link to="/About" className="hover:text-gray-300 transition">
+        <Link to="/about-us" className="hover:text-gray-300 transition">
           ABOUT
         </Link>
-        <Link to="/Services" className="hover:text-gray-300 transition">
+        <Link to="/services" className="hover:text-gray-300 transition">
           SERVICES
         </Link>
-        <Link to="/Pricing" className="hover:text-gray-300 transition">
-          PRICING
-        </Link>
-        <Link to="/Contact" className="hover:text-gray-300 transition">
+
+        <Link to="/contact" className="hover:text-gray-300 transition">
           CONTACT
         </Link>
       </div>
@@ -62,28 +60,22 @@ function Nav() {
             className="absolute right-4 top-14 bg-black/95 text-white p-4 space-y-4 rounded-2xl shadow-lg z-50"
           >
             <Link
-              to="/About"
+              to="/about-us"
               onClick={closeMenu}
               className="block hover:text-gray-300 transition"
             >
               ABOUT
             </Link>
             <Link
-              to="/Services"
+              to="/ServicePrice"
               onClick={closeMenu}
               className="block hover:text-gray-300 transition"
             >
               SERVICES
             </Link>
+
             <Link
-              to="/Pricing"
-              onClick={closeMenu}
-              className="block hover:text-gray-300 transition"
-            >
-              PRICING
-            </Link>
-            <Link
-              to="/Contact"
+              to="/contact"
               onClick={closeMenu}
               className="block hover:text-gray-300 transition"
             >

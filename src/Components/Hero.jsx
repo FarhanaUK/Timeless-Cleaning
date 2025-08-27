@@ -1,4 +1,4 @@
-import PhoneCall from "./PhoneCall";
+import PhoneCall from "./TopBar";
 import SlidingBanner from "./SlidingBanner";
 import Services from "./Services";
 import ImageSections from "./ImageSections";
@@ -9,19 +9,9 @@ function Hero() {
   return (
     <div>
       <div>
-        <PhoneCall />
-      </div>
-      <h1
-        className="flex justify-center text-6xl space-x-4 mt-16 mb-4 text-blue-500
-        font-michroma"
-      >
-        Timeless Cleaning
-      </h1>
-      <p className="text-center text-blue-900 text-xl mb-8">
-        Reliable and Affordable Cleaning Services for a Sparkling Home
-      </p>
-
-      <div>
+        <p className="text-center text-blue-900 text-xl mb-8">
+          Reliable and Affordable Cleaning Services for a Sparkling Home
+        </p>
         <SlidingBanner />
         <Services />
         <ImageSections />

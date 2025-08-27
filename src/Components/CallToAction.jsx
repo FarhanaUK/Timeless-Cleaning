@@ -1,7 +1,7 @@
 function CallToAction() {
   return (
     <div className="flex flex-col justify-center items-center border border-gray-200 rounded-lg p-6">
-      <h1 className="flex justify-center font-bold text-4xl mt-6 font-arsenal text-red-700">
+      <h1 className="flex justify-center font-bold text-4xl mt-6 font-michroma text-red-700">
         Free Consultation
       </h1>
       <p className="text-lg text-gray-700 mt-4 text-center">
@@ -10,7 +10,10 @@ function CallToAction() {
         the best solution to leave your home or workplace sparkling clean.
         Simple, reliable, and tailored to you.
       </p>
-      <a className="text-2xl text-red-700 mt-6 my-6" href="tel:+447377156973">
+      <a
+        className="font-michroma text-2xl text-red-700 mt-6 my-6"
+        href="tel:+447377156973"
+      >
         <strong>Call Now: 07377 156 973</strong>
       </a>
     </div>

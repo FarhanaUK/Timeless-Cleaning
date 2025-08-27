@@ -6,14 +6,26 @@ import Footer from "./Components/Footer";
 import ImageSections from "./Components/ImageSections";
 import Marquee from "./Components/Marquee";
 import Nav from "./Components/Nav";
-import PhoneCall from "./Components/PhoneCall";
+import TopBar from "./Components/TopBar";
 import Services from "./Components/Services";
 import SlidingBanner from "./Components/SlidingBanner";
+import { Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
+import ServicePrice from "./Components/ServicePrice";
+import BusinessName from "./Components/BusinessName";
 
 function App() {
   return (
     <div className="font-urbanist">
-      <Hero />
+      <TopBar />
+      <BusinessName />
+
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/services" element={<ServicePrice />} />
+        <Route path="/contact" element={<ContactForm />} />
+      </Routes>
       <Footer />
     </div>
   );
