@@ -1,37 +1,53 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import emailjs from "@emailjs/browser";
 
 function ContactForm() {
   const [value, setValue] = useState({ name: "", email: "", message: "" });
-  const [showSuccess, setShowSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [result, setResult] = useState("");
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value: val } = e.target;
     setValue((prev) => ({ ...prev, [name]: val }));
   };
 
-  const onSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setResult("");
 
-    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const formData = {
+      name: value.name,
+      email: value.email,
+      message: value.message,
+      access_key: import.meta.env.VITE_WEB3FORM_ACCESS_KEY, // Your Web3Forms key
+    };
 
-    emailjs
-      .send(serviceID, templateID, value, publicKey)
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
         setShowSuccess(true);
         setResult("Thank you! We received your message.");
-        setValue({ name: "", email: "", message: "" }); // reset form
-      })
-      .catch((err) => {
-        console.error("FAILED...", err);
+        setValue({ name: "", email: "", message: "" });
+      } else {
         setResult("Oops! Something went wrong. Please try again.");
-      });
+        console.error(data);
+      }
+    } catch (err) {
+      console.error(err);
+      setResult("Oops! Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -49,14 +65,14 @@ function ContactForm() {
       </div>
 
       {showSuccess && (
-        <div className="absolute top-10 bg-white border border-[#26B7FF] rounded-lg shadow-lg p-6 w-80 text-center z-10">
+        <div className="absolute top-10 bg-white border border-green-700 rounded-lg shadow-lg p-6 w-80 text-center z-10">
           <div className="flex flex-col items-center space-y-2">
             <span className="text-green-600 text-4xl">✔</span>
             <p className="font-bold text-lg text-green-700">Success</p>
             <p className="text-gray-700">Message sent successfully.</p>
             <button
               onClick={() => setShowSuccess(false)}
-              className="mt-4 px-4 py-2 bg-[#26B7FF] text-white rounded hover:bg-green-700"
+              className="mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
             >
               OK
             </button>
@@ -65,7 +81,7 @@ function ContactForm() {
       )}
 
       <div className="mb-4 w-full max-w-xl border p-6 rounded-lg shadow-lg bg-slate-100">
-        <form onSubmit={onSubmit} className="flex flex-col">
+        <form onSubmit={handleSubmit} className="flex flex-col">
           <label className="font-semibold mb-2">
             Name
             <input
@@ -102,9 +118,29 @@ function ContactForm() {
             />
           </label>
 
-          <button className="font-michroma border p-2 rounded-lg bg-black text-white">
-            Send Message
+          <button
+            type="submit"
+            className="
+              font-michroma 
+              border p-2 rounded-lg
+              bg-green-600 
+              text-white 
+              px-6 py-3 
+              shadow-md 
+              active:shadow-sm 
+              active:translate-y-1 
+              transition-all 
+              duration-100
+              disabled:opacity-50
+            "
+            disabled={loading}
+          >
+            {loading ? "Sending..." : "Send Message"}
           </button>
+
+          {loading && (
+            <div className="mt-4 border-4 border-green-500 border-t-transparent rounded-full w-8 h-8 animate-spin"></div>
+          )}
         </form>
 
         {result && <p className="mt-4 text-gray-600 font-medium">{result}</p>}
