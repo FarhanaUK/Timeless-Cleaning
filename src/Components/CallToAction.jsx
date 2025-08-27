@@ -12,9 +12,9 @@ function CallToAction() {
       </p>
       <a
         className="font-michroma text-2xl text-red-700 mt-6 my-6"
-        href="tel:+447377156973"
+        href="tel:+447305959517"
       >
-        <strong>Call Now: 07377 156 973</strong>
+        <strong>Call Now: 07305 959 517</strong>
       </a>
     </div>
   );

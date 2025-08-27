@@ -44,10 +44,7 @@ const Services = () => {
             <FontAwesomeIcon icon={faCheck} className="text-green-500 mr-2" />
             Carpet & Upholstery Cleaning
           </li>
-          <li>
-            <FontAwesomeIcon icon={faCheck} className="text-green-500 mr-2" />
-            Window Cleaning
-          </li>
+
           <li>
             <FontAwesomeIcon icon={faCheck} className="text-green-500 mr-2" />
             Kitchen & Appliance Cleaning{" "}

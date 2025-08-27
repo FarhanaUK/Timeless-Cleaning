@@ -5,10 +5,10 @@ import Nav from "./Nav";
 function TopBar() {
   return (
     <div className="flex flex- justify-between items-center w-full pr-6 ">
-      <a className="font-michroma text-2xl p-6" href="tel:+447377156973">
+      <a className="font-michroma text-2xl p-6" href="tel:+447305959517">
         {" "}
         <FontAwesomeIcon icon={faPhone} className="mr-2" />
-        07377 156 973
+        07305 959 517
       </a>
 
       <div>

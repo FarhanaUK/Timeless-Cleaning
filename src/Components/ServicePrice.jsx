@@ -18,11 +18,11 @@ function ServicePrice() {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="border p-6 rounded-xl shadow-lg bg-white">
             <h3 className="text-xl font-semibold mb-2">Studio Flat</h3>
-            <p>
-              No oven: £140 | 3 hours, 1 cleaner (or 2 cleaners 1.5 hrs each)
-            </p>
+            <p>No oven: £140 | 3 hours, 1 cleaner</p>
             <p className="font-bold mt-2">Discount Deal:</p>
-            <p>With oven, hob & extractor: £170</p>
+            <p>
+              With oven, £170 | 4 hours, 1 cleaner (or 2 cleaners 2 hrs each)
+            </p>
           </div>
 
           <div className="border p-6 rounded-xl shadow-lg bg-white">

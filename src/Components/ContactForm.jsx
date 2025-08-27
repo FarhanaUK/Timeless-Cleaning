@@ -58,9 +58,9 @@ function ContactForm() {
       </p>
 
       <div className="pr-6">
-        <a className="font-michroma text-2xl p-6" href="tel:+447377156973">
+        <a className="font-michroma text-2xl p-6" href="tel:+447305959517">
           <FontAwesomeIcon icon={faPhone} className="mr-2" />
-          Call us directly at 07377 156 973
+          Call us directly at 07305 959 517
         </a>
       </div>
 

@@ -13,6 +13,9 @@ import { Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import ServicePrice from "./Components/ServicePrice";
 import BusinessName from "./Components/BusinessName";
+import PrivacyPolicy from "./Components/PrivacyPolicy";
+import Faqs from "./Components/Faqs";
+import TermsAndConditions from "./Components/TermsAndConditions";
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/services" element={<ServicePrice />} />
         <Route path="/contact" element={<ContactForm />} />
+        <Route path="/termsandconditions" element={<TermsAndConditions />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/faqs" element={<Faqs />} />
       </Routes>
       <Footer />
     </div>
