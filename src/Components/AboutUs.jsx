@@ -3,54 +3,92 @@ function AboutUs() {
     <div className="max-w-6xl mx-auto px-4 py-16 space-y-16">
       {/* Hero Section */}
       <div className="text-center space-y-4">
-        <h1 className="text-5xl font-michroma text-blue-500">
-          Keeping Your Space Spotless
-        </h1>
+        <h1 className="text-3xl md:text-4xl font-michroma">About Us</h1>
         <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          Reliable, thorough, and friendly cleaning services that make every
-          home or office feel fresh and welcoming.
+          Timeless Cleaning – Where Quality Meets Trust. Reliable, thorough, and
+          eco-friendly cleaning services for homes and offices across London.
         </p>
       </div>
 
-      {/* Mission Section */}
       <div className="bg-blue-50 rounded-xl p-8 shadow-lg flex flex-col md:flex-row items-center md:space-x-8 space-y-6 md:space-y-0">
         <div className="flex-shrink-0">
           <img
-            src="stock5.jpg"
-            alt="Mission"
+            src="stock4.jpg"
+            alt="Our Commitment"
             className="w-48 h-48 object-cover rounded-lg shadow-md"
           />
         </div>
         <div>
-          <h2 className="text-3xl font-michroma text-blue-600 mb-3">
-            Our Mission
-          </h2>
+          <h2 className="text-3xl font-michroma mb-3">Our Commitment to You</h2>
           <p className="text-gray-700 text-lg">
-            We provide reliable, thorough, and friendly cleaning services that
-            make every space feel fresh and welcoming. We take the stress out of
-            cleaning so you can focus on what matters most.
+            Every home and office is unique, and we take the time to understand
+            your needs. From regular cleaning to deep carpet cleaning and
+            end-of-tenancy services, no job is too big or small. Our trained and
+            background-checked team ensures your property is in safe, capable
+            hands. We don’t just clean; we transform spaces.
           </p>
         </div>
       </div>
 
-      {/* Difference Section */}
       <div className="bg-white rounded-xl p-8 shadow-lg flex flex-col md:flex-row items-center md:space-x-8 space-y-6 md:space-y-0">
         <div className="flex-shrink-0">
           <img
-            src="stock4.jpg"
-            alt="Difference"
+            src="stock3.jpg"
+            alt="Exceptional Service"
             className="w-48 h-48 object-cover rounded-lg shadow-md"
           />
         </div>
         <div>
-          <h2 className="text-3xl font-michroma text-blue-600 mb-3">
-            What Makes Us Different
+          <h2 className="text-3xl font-michroma mb-3">
+            Exceptional Service at Fair Prices
           </h2>
           <p className="text-gray-700 text-lg">
-            We combine years of experience with a personal touch. Residential or
-            commercial, we treat every property with care and attention to
-            detail. Our friendly team, flexible scheduling, and commitment to
-            quality ensure your space is not just clean, but truly refreshed.
+            We combine quality and affordability. From home cleaning and office
+            services to professional carpet cleaning and end-of-tenancy
+            cleaning, Timeless Cleaning provides cost-effective, reliable, and
+            eco-friendly solutions.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-blue-50 rounded-xl p-8 shadow-lg flex flex-col md:flex-row items-center md:space-x-8 space-y-6 md:space-y-0">
+        <div className="flex-shrink-0">
+          <img
+            src="stock4.jpg"
+            alt="Advanced Technology"
+            className="w-48 h-48 object-cover rounded-lg shadow-md"
+          />
+        </div>
+        <div>
+          <h2 className="text-3xl font-michroma mb-3">
+            Advanced Cleaning Technology
+          </h2>
+          <p className="text-gray-700 text-lg">
+            We use the latest cleaning technology to achieve outstanding results
+            efficiently. Our professional equipment ensures deeper cleaning
+            while using eco-friendly, non-toxic products safe for your family,
+            employees, and the environment.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-xl p-8 shadow-lg flex flex-col md:flex-row items-center md:space-x-8 space-y-6 md:space-y-0">
+        <div className="flex-shrink-0">
+          <img
+            src="stock3.jpg"
+            alt="Professional Team"
+            className="w-48 h-48 object-cover rounded-lg shadow-md"
+          />
+        </div>
+        <div>
+          <h2 className="text-3xl font-michroma mb-3">
+            Professional Cleaning Team
+          </h2>
+          <p className="text-gray-700 text-lg">
+            Our team is trained, background-checked, and passionate about
+            providing exceptional service. Friendly, approachable, and
+            detail-oriented, we ensure your space is spotless while treating
+            every client with respect and professionalism.
           </p>
         </div>
       </div>
@@ -58,8 +96,9 @@ function AboutUs() {
       {/* Closing Section */}
       <div className="text-center">
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Whether you need a regular cleaning, a one-time deep clean, or
-          specialized services, our team is here to make your space shine.
+          Whether you need regular home cleaning, office services, carpet care,
+          or end-of-tenancy cleaning, Timeless Cleaning is your trusted partner
+          for a spotless space.
         </p>
       </div>
     </div>
