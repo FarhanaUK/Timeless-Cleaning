@@ -3,12 +3,10 @@ import { useState, useEffect } from "react";
 const SlidingBanner = () => {
   const slides = [
     {
-      img: "stock3.jpg",
-      text1:
-        "Create your perfect outdoor space with our garden designs, landscaping, and paving solutions.",
+      img: "1.png",
     },
-    { img: "stock1.jpg" },
-    { img: "stock2.jpg" },
+    { img: "stock1.png" },
+    { img: "Aihands.png" },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -43,7 +41,7 @@ const SlidingBanner = () => {
           <div key={index} className="w-full flex-shrink-0 relative">
             <img
               src={slide.img}
-              className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover"
+              className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover "
               alt={`Slide ${index}`}
             />
             {slide.text1 && (

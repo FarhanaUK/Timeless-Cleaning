@@ -10,7 +10,7 @@ function BusinessName() {
           className="cursor-pointer"
         >
           <h1
-            className="flex justify-center text-6xl space-x-4 mt-16 mb-4 text-blue-500
+            className="flex justify-center text-6xl space-x-4 mt-16 mb-4 text-sky-500
         font-michroma"
           >
             Timeless Cleaning

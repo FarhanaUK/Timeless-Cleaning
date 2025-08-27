@@ -94,7 +94,7 @@ function Marquee() {
         {reviews.concat(reviews).map((review, index) => (
           <div
             key={index}
-            className="flex-shrink-0 px-6 py-4 bg-cyan-300 shadow-lg mx-4 rounded-lg border-l-4 border-blue-800 transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+            className="flex-shrink-0 px-6 py-4 bg-sky-500 shadow-lg mx-4 rounded-lg border-l-4 border-blue-800 transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
           >
             <p className="text-xl font-semibold text-gray-900">{review.name}</p>
             <p className="text-md text-gray-700 italic">{review.review}</p>

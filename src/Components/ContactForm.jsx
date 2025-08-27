@@ -17,23 +17,16 @@ function ContactForm() {
     e.preventDefault();
     setLoading(true);
     setResult("");
-
-    const formData = {
-      name: value.name,
-      email: value.email,
-      message: value.message,
-      access_key: import.meta.env.VITE_WEB3FORM_ACCESS_KEY, // Your Web3Forms key
-    };
-
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const formData = new FormData(e.target);
+      formData.append("access_key", import.meta.env.VITE_WEB3FORM_ACCESS_KEY);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: formData,
       });
 
-      const data = await res.json();
-
+      const data = await response.json();
       if (data.success) {
         setShowSuccess(true);
         setResult("Thank you! We received your message.");
