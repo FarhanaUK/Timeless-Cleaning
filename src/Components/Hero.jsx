@@ -9,9 +9,6 @@ function Hero() {
   return (
     <div>
       <div>
-        <p className="text-center text-blue-900 text-xl mb-8">
-          Reliable, Affordable, and Always Sparkling for Home or Business
-        </p>
         <SlidingBanner />
         <Services />
         <ImageSections />

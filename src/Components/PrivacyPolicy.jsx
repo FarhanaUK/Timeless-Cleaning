@@ -1,14 +1,14 @@
 function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-gray-50 text-stone-800 px-4 py-12">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
-        <header className="mb-8 text-center">
-          <h1 className="text-3xl md:text-4xl font-michroma text-stone-800">
+    <main className="min-h-screen bg-gray-50 text-stone-800 px-4 py-8 sm:py-12">
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-12">
+        <header className="mb-6 sm:mb-8 text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-michroma text-stone-800">
             Privacy Policy
           </h1>
         </header>
 
-        <section className="prose prose-stone max-w-none">
+        <section className="prose prose-sm sm:prose-base md:prose prose-stone max-w-none">
           <p>
             Timeless Cleaners (“we”, “our”, “us”) respects your privacy and is
             committed to protecting your personal data. This Privacy Policy
@@ -98,11 +98,11 @@ function PrivacyPolicy() {
           <p>
             If you have any questions or requests, contact Timeless Cleaners:
           </p>
-          <p className="text-sm text-gray-700">
+          <p className="text-sm sm:text-base text-gray-700">
             Email:{" "}
             <a
               href="mailto:service.timelesscleaning@gmail.com"
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 hover:underline break-words"
             >
               service.timelesscleaning@gmail.com
             </a>
@@ -113,7 +113,7 @@ function PrivacyPolicy() {
             </a>
           </p>
 
-          <p className="mt-6 text-xs text-gray-400">
+          <p className="mt-6 text-xs sm:text-sm text-gray-400">
             Note: This Privacy Policy is a simple template for clarity. For full
             compliance (e.g., GDPR in the UK/EU), consult a legal professional.
           </p>

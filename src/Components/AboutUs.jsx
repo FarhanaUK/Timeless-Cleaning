@@ -12,7 +12,6 @@ function AboutUs() {
       </div>
 
       {[
-        // loop over items for cleaner code
         {
           img: "small1.png",
           alt: "Our Commitment",
@@ -32,7 +31,7 @@ function AboutUs() {
                  services to professional carpet cleaning and end-of-tenancy
                  cleaning, Timeless Cleaning provides cost-effective, reliable, and
                  eco-friendly solutions.`,
-          bg: "bg-white",
+          bg: "bg-blue-50",
         },
         {
           img: "small3.png",
@@ -42,7 +41,7 @@ function AboutUs() {
                  providing exceptional service. Friendly, approachable, and
                  detail-oriented, we ensure your space is spotless while treating
                  every client with respect and professionalism.`,
-          bg: "bg-white",
+          bg: "bg-blue-50",
         },
       ].map((item, index) => (
         <div
@@ -53,7 +52,7 @@ function AboutUs() {
             <img
               src={item.img}
               alt={item.alt}
-              className="w-full max-w-xs sm:max-w-sm h-auto object-cover rounded-lg shadow-md"
+              className="w-48 h-48 sm:w-56 sm:h-56 md:w-48 md:h-48 object-cover rounded-lg shadow-md"
             />
           </div>
           <div>

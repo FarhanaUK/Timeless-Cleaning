@@ -2,11 +2,9 @@ import { useState, useEffect } from "react";
 
 const SlidingBanner = () => {
   const slides = [
-    {
-      img: "1.png",
-    },
-    { img: "2).png" },
-    { img: "Aihands.png" },
+    { img: "banner1.png" },
+    { img: "banner3.png" },
+    { img: "banner2.png" },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -27,8 +25,7 @@ const SlidingBanner = () => {
   }, [currentSlide, slides.length]);
 
   return (
-    <div className="relative w-full overflow-hidden h-[300px] sm:h-[400px] md:h-[500px]">
-      {/* flex container for slides */}
+    <div className="relative w-full overflow-hidden">
       <div
         className={`flex ${
           isTransitioning
@@ -38,10 +35,13 @@ const SlidingBanner = () => {
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {[...slides, slides[0]].map((slide, index) => (
-          <div key={index} className="w-full flex-shrink-0 relative">
+          <div
+            key={index}
+            className="w-full flex-shrink-0 relative h-[170px] sm:h-auto" // mobile height 200px, rest same as before
+          >
             <img
               src={slide.img}
-              className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover "
+              className="w-full h-full object-cover"
               alt={`Slide ${index}`}
             />
             {slide.text1 && (

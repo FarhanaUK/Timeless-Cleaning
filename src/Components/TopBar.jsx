@@ -1,18 +1,47 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import Nav from "./Nav";
+import { Link } from "react-router-dom";
 
 function TopBar() {
   return (
-    <div className="flex flex- justify-between items-center w-full pr-6 ">
-      <a className="font-michroma text-2xl p-6" href="tel:+447305959517">
-        {" "}
-        <FontAwesomeIcon icon={faPhone} className="mr-2" />
-        07305 959 517
-      </a>
+    <div className="w-full bg-white shadow-sm px-4 sm:px-8 md:px-12 py-3">
+      <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
+        <div className="flex flex-col items-center lg:flex-row lg:items-center">
+          <Link
+            to="/"
+            aria-label="Timeless Cleaning homepage"
+            className="cursor-pointer flex items-center mb-2 lg:mb-0"
+          >
+            <img
+              src="/logo.PNG"
+              alt="Timeless Cleaning Logo"
+              className="h-12 sm:h-14 md:h-16 object-contain mr-2"
+            />
+            <div className="text-center lg:text-left">
+              <h1 className="font-michroma text-sky-600 text-xl sm:text-2xl">
+                Timeless Cleaning
+              </h1>
+              <p className="text-gray-500 text-sm">
+                Reliable, Affordable, Always Sparkling
+              </p>
+            </div>
+          </Link>
+        </div>
 
-      <div>
-        <Nav />
+        <div className="flex justify-center sm:my-4 lg:my-0">
+          <Nav />
+        </div>
+
+        <div className="flex justify-center lg:justify-end">
+          <a
+            className="font-michroma text-lg sm:text-xl text-sky-500"
+            href="tel:+447305959517"
+          >
+            <FontAwesomeIcon icon={faPhone} className="mr-2" />
+            07305 959 517
+          </a>
+        </div>
       </div>
     </div>
   );

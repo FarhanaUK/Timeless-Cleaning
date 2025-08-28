@@ -1,135 +1,129 @@
 function ServicePrice() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-16 space-y-12">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12 py-12 space-y-12">
+      {/* Section Header */}
       <div className="text-center space-y-4">
-        <h1 className="text-3xl md:text-4xl font-michroma">Our Services</h1>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-michroma">
+          Our Services
+        </h1>
+        <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
           Timeless Cleaning provides professional home cleaning services across
           London. Choose from our flat cleaning packages, deep cleans, or
           individual services.
         </p>
       </div>
 
-      <div className="space-y-8">
-        <h2 className="text-2xl font-michroma text-blue-600 mb-4">
+      {/* Flat Cleaning Packages */}
+      <div className="space-y-6">
+        <h2 className="text-xl sm:text-2xl font-michroma text-blue-600 mb-4">
           Flat Cleaning Packages
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="border p-6 rounded-xl shadow-lg bg-white">
-            <h3 className="text-xl font-semibold mb-2">Studio Flat</h3>
-            <p>No oven: £140 | 3 hours, 1 cleaner</p>
-            <p className="font-bold mt-2">Discount Deal:</p>
-            <p>
-              With oven, £170 | 4 hours, 1 cleaner (or 2 cleaners 2 hrs each)
-            </p>
-          </div>
-
-          <div className="border p-6 rounded-xl shadow-lg bg-white">
-            <h3 className="text-xl font-semibold mb-2">1 Bed Flat</h3>
-            <p>No oven: £165 | 4 hours, 1 cleaner (or 2 cleaners 2 hrs each)</p>
-            <p className="font-bold mt-2">Discount Deal:</p>
-            <p>With oven: £185 | 5 hours (or 2 cleaners 2.5 hrs each)</p>
-          </div>
-
-          <div className="border p-6 rounded-xl shadow-lg bg-white">
-            <h3 className="text-xl font-semibold mb-2">
-              2 Bed Flat (1 Bathroom)
-            </h3>
-            <p>No oven: £185 | 5 hours (or 2 cleaners 2.5 hrs each)</p>
-            <p className="font-bold mt-2">Discount Deal:</p>
-            <p>With oven: £225 | 6 hours (or 2 cleaners 3 hrs each)</p>
-          </div>
-
-          <div className="border p-6 rounded-xl shadow-lg bg-white">
-            <h3 className="text-xl font-semibold mb-2">3 Bed, 1 Bath</h3>
-            <p>No oven: £225 | 6 hours (or 2 cleaners 3 hrs each)</p>
-            <p className="font-bold mt-2">Discount Deal:</p>
-            <p>With oven: £275 | 2 cleaners 3.5 hrs each</p>
-          </div>
-
-          <div className="border p-6 rounded-xl shadow-lg bg-white">
-            <h3 className="text-xl font-semibold mb-2">3 Bed, 2 Bath</h3>
-            <p>No oven: £235 | 2 cleaners 3.5 hrs</p>
-            <p className="font-bold mt-2">Discount Deal:</p>
-            <p>With oven: £290 | 2 cleaners 4 hrs each</p>
-          </div>
-
-          <div className="border p-6 rounded-xl shadow-lg bg-white">
-            <h3 className="text-xl font-semibold mb-2">4 Bed, 1 Bath</h3>
-            <p>No oven: £360 | 2 cleaners 4.5 hrs each</p>
-            <p className="font-bold mt-2">Discount Deal:</p>
-            <p>With oven: £420 | 2 cleaners 5 hrs each</p>
-            <p className="text-sm mt-2 text-gray-600">
-              5+ bed? Contact us for a custom quote.
-            </p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[
+            {
+              title: "Studio Flat",
+              noOven: "£140 | 3 hours, 1 cleaner",
+              discount:
+                "With oven, £170 | 4 hours, 1 cleaner (or 2 cleaners 2 hrs each)",
+            },
+            {
+              title: "1 Bed Flat",
+              noOven: "£165 | 4 hours, 1 cleaner (or 2 cleaners 2 hrs each)",
+              discount:
+                "With oven: £185 | 5 hours (or 2 cleaners 2.5 hrs each)",
+            },
+            {
+              title: "2 Bed Flat (1 Bathroom)",
+              noOven: "£185 | 5 hours (or 2 cleaners 2.5 hrs each)",
+              discount: "With oven: £225 | 6 hours (or 2 cleaners 3 hrs each)",
+            },
+            {
+              title: "3 Bed, 1 Bath",
+              noOven: "£225 | 6 hours (or 2 cleaners 3 hrs each)",
+              discount: "With oven: £275 | 2 cleaners 3.5 hrs each",
+            },
+            {
+              title: "3 Bed, 2 Bath",
+              noOven: "£235 | 2 cleaners 3.5 hrs",
+              discount: "With oven: £290 | 2 cleaners 4 hrs each",
+            },
+            {
+              title: "4 Bed, 1 Bath",
+              noOven: "£360 | 2 cleaners 4.5 hrs each",
+              discount: "With oven: £420 | 2 cleaners 5 hrs each",
+              note: "5+ bed? Contact us for a custom quote.",
+            },
+          ].map((service, idx) => (
+            <div
+              key={idx}
+              className="border p-4 sm:p-6 rounded-xl shadow-lg bg-white"
+            >
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+                {service.title}
+              </h3>
+              <p className="text-sm sm:text-base">{service.noOven}</p>
+              <p className="font-bold mt-2">Discount Deal:</p>
+              <p className="text-sm sm:text-base">{service.discount}</p>
+              {service.note && (
+                <p className="text-xs sm:text-sm mt-1 text-gray-600">
+                  {service.note}
+                </p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="border-l-4 border-yellow-500 bg-yellow-50 p-6 rounded-xl shadow-md">
-        <h2 className="text-2xl font-michroma text-yellow-700 mb-2">
+      {/* Same Day Jobs */}
+      <div className="border-l-4 border-yellow-500 bg-yellow-50 p-4 sm:p-6 rounded-xl shadow-md">
+        <h2 className="text-xl sm:text-2xl font-michroma text-yellow-700 mb-2">
           Same Day Jobs
         </h2>
-        <p>
+        <p className="text-sm sm:text-base">
           Additional charge: £75-£100. Jobs may incur a higher charge depending
           on complexity.
         </p>
-        <p className="text-sm text-gray-600 mt-2">
+        <p className="text-xs sm:text-sm text-gray-600 mt-1">
           A percentage of this extra charge is paid back to the cleaner as a
           bonus.
         </p>
       </div>
 
+      {/* Individual Cleaning Quotes */}
       <div className="space-y-4">
-        <h2 className="text-2xl font-michroma text-blue-600 mb-2">
+        <h2 className="text-xl sm:text-2xl font-michroma text-blue-600 mb-2">
           Individual Cleaning Quotes
         </h2>
-        <div className="grid md:grid-cols-3 gap-4">
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Kitchen Deep Clean: £80
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Living Room Deep Clean: £40
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Bathroom Deep Clean: £55
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Toilet Deep Clean: £25
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Bedroom Deep Clean: £40
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Garage: £50
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Conservatory: £45
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Single Oven: £55
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Double Oven: £79
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Range Oven: £135
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Hob: £12.50
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Extractor: £25
-          </div>
-          <div className="border p-4 rounded-lg shadow bg-white">
-            Fridge: £10
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {[
+            "Kitchen Deep Clean: £80",
+            "Living Room Deep Clean: £40",
+            "Bathroom Deep Clean: £55",
+            "Toilet Deep Clean: £25",
+            "Bedroom Deep Clean: £40",
+            "Garage: £50",
+            "Conservatory: £45",
+            "Single Oven: £55",
+            "Double Oven: £79",
+            "Range Oven: £135",
+            "Hob: £12.50",
+            "Extractor: £25",
+            "Fridge: £10",
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="border p-3 sm:p-4 rounded-lg shadow bg-white text-sm sm:text-base"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="text-center bg-green-50 p-6 rounded-xl shadow-md">
-        <p className="font-semibold text-lg">
+      {/* Minimum Booking Fee */}
+      <div className="text-center bg-green-50 p-4 sm:p-6 rounded-xl shadow-md">
+        <p className="font-semibold text-base sm:text-lg">
           Minimum booking fee: £120 (up to 3 hours)
         </p>
       </div>

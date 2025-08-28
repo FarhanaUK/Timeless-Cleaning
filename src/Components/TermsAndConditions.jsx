@@ -1,14 +1,14 @@
 function TermsAndConditions() {
   return (
-    <main className="min-h-screen bg-gray-50 text-stone-800 px-4 py-12">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
-        <header className="mb-8 text-center">
-          <h1 className="text-3xl md:text-4xl font-michroma text-stone-800">
+    <main className="min-h-screen bg-gray-50 text-stone-800 px-4 py-8 sm:py-12">
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-12">
+        <header className="mb-6 sm:mb-8 text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-michroma text-stone-800">
             Terms & Conditions
           </h1>
         </header>
 
-        <section className="prose prose-stone max-w-none">
+        <section className="prose prose-sm sm:prose-base md:prose max-w-none">
           <p>
             Welcome to <strong>Timeless Cleaners</strong>. By booking our
             services you agree to these Terms & Conditions. Please read them
@@ -99,11 +99,11 @@ function TermsAndConditions() {
 
           <h2>Contact Us</h2>
           <p>Questions or concerns — contact Timeless Cleaners:</p>
-          <p className="text-sm text-gray-700">
+          <p className="text-sm sm:text-base text-gray-700">
             Email:{" "}
             <a
               href="mailto:service.timelesscleaning@gmail.com"
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 hover:underline break-words"
             >
               service.timelesscleaning@gmail.com
             </a>
@@ -114,7 +114,7 @@ function TermsAndConditions() {
             </a>
           </p>
 
-          <p className="mt-6 text-xs text-gray-400">
+          <p className="mt-6 text-xs sm:text-sm text-gray-400">
             Note: This document is a clear, user-friendly template. It is not
             legal advice — consider getting a solicitor to review for specific
             legal protection.

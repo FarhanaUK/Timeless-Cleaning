@@ -3,13 +3,13 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const Services = () => {
   return (
-    <div>
+    <div className="px-4 sm:px-6 md:px-6">
       <h1 className="flex justify-center font-bold text-4xl mt-12 font-michroma">
         Services
       </h1>
 
-      <div className="flex flex-wrap justify-between mt-8 mb-8 ml-12">
-        <ul className="w-1/5 space-y-4 p-4 border-2 border-gray-200 bg-gray-50 rounded-lg shadow-md">
+      <div className="flex flex-wrap justify-center mt-8 mb-8 gap-6">
+        <ul className="w-full sm:w-[48%] lg:w-1/5 space-y-4 p-4 border-2 border-gray-200 bg-gray-50 rounded-lg shadow-md">
           <li>
             <FontAwesomeIcon icon={faCheck} className="text-green-500 mr-2" />
             Regular House Cleaning
@@ -24,7 +24,7 @@ const Services = () => {
           </li>
         </ul>
 
-        <ul className="w-1/5 space-y-4 p-4 border-2 border-gray-200 bg-gray-50 rounded-lg shadow-md">
+        <ul className="w-full sm:w-[48%] lg:w-1/5 space-y-4 p-4 border-2 border-gray-200 bg-gray-50 rounded-lg shadow-md">
           <li>
             <FontAwesomeIcon icon={faCheck} className="text-green-500 mr-2" />
             Office Cleaning
@@ -39,15 +39,14 @@ const Services = () => {
           </li>
         </ul>
 
-        <ul className="w-1/5 space-y-4 p-4 border-2 border-gray-200 bg-gray-50 rounded-lg shadow-md mr-12">
+        <ul className="w-full sm:w-[48%] lg:w-1/5 space-y-4 p-4 border-2 border-gray-200 bg-gray-50 rounded-lg shadow-md">
           <li>
             <FontAwesomeIcon icon={faCheck} className="text-green-500 mr-2" />
             Carpet & Upholstery Cleaning
           </li>
-
           <li>
             <FontAwesomeIcon icon={faCheck} className="text-green-500 mr-2" />
-            Kitchen & Appliance Cleaning{" "}
+            Kitchen & Appliance Cleaning
           </li>
           <li>
             <FontAwesomeIcon icon={faCheck} className="text-green-500 mr-2" />
