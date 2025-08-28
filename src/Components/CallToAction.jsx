@@ -1,7 +1,7 @@
 function CallToAction() {
   return (
     <div className="flex flex-col justify-center items-center border border-gray-200 rounded-lg p-6">
-      <h1 className="flex justify-center font-bold text-4xl mt-6 font-michroma text-red-700">
+      <h1 className="flex justify-center font-bold text-4xl mt-6 font-michroma text-orange-500">
         Free Consultation
       </h1>
       <p className="text-lg text-gray-700 mt-4 text-center">
@@ -11,7 +11,7 @@ function CallToAction() {
         Simple, reliable, and tailored to you.
       </p>
       <a
-        className="font-michroma text-2xl text-red-700 mt-6 my-6"
+        className="font-michroma text-2xl text-orange-500 mt-6 my-6"
         href="tel:+447305959517"
       >
         <strong>Call Now: 07305 959 517</strong>

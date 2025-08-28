@@ -1,7 +1,6 @@
 function ImageSections() {
   return (
     <div>
-      {/* First Image and Text Block */}
       <div className="flex justify-center items-center flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-12 mt-12 bg-gray-200">
         <img
           src="/before&after.png"
@@ -22,7 +21,6 @@ function ImageSections() {
         </div>
       </div>
 
-      {/* Second Image and Text Block with Image on Right */}
       <div className="flex justify-center items-center flex-col md:flex-row-reverse space-y-6 md:space-y-0 md:space-x-12 mb-12 bg-gray-200">
         <img
           src="cleaningteam.png"

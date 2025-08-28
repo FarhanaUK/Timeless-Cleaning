@@ -45,7 +45,7 @@ function Footer() {
           <h3 className="font-semibold mb-2">Follow Us</h3>
           <div className="flex space-x-4">
             <a
-              href="https://www.instagram.com/bespokewebengineers/"
+              href="https://www.instagram.com/timelesscleanings/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-pink-500 p-3 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"

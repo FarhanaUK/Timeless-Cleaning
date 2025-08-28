@@ -5,7 +5,7 @@ const SlidingBanner = () => {
     {
       img: "1.png",
     },
-    { img: "stock1.png" },
+    { img: "2).png" },
     { img: "Aihands.png" },
   ];
 
