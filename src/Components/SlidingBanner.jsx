@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 
 const SlidingBanner = () => {
   const slides = [
-    { img: "banner1.png" },
-    { img: "banner3.png" },
-    { img: "banner2.png" },
+    { img: "banner1.png", alt: "Affordable and reliable cleaning solution" },
+    { img: "banner3.png", alt: "spotless cleaning space" },
+    { img: "banner2.png", alt: "Professional cleaning service in London" },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,7 +25,11 @@ const SlidingBanner = () => {
   }, [currentSlide, slides.length]);
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div
+      className="relative w-full overflow-hidden"
+      role="region"
+      aria-label="Promotional banner"
+    >
       <div
         className={`flex ${
           isTransitioning
@@ -37,7 +41,7 @@ const SlidingBanner = () => {
         {[...slides, slides[0]].map((slide, index) => (
           <div
             key={index}
-            className="w-full flex-shrink-0 relative h-[170px] sm:h-auto" // mobile height 200px, rest same as before
+            className="w-full flex-shrink-0 relative h-[170px] sm:h-auto"
           >
             <img
               src={slide.img}

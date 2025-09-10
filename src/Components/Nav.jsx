@@ -33,13 +33,12 @@ function Nav() {
   }, [isOpen]);
 
   return (
-    <div className="w-full flex justify-center mt-4">
-      {/* Desktop nav */}
+    <nav className="w-full flex justify-center mt-4">
       <div className="hidden md:flex text-gray-500 rounded-2xl px-8 py-3 space-x-10 shadow-lg">
         <Link to="/about-us" className="hover:text-gray-300 transition">
           ABOUT
         </Link>
-        <Link to="/services" className="hover:text-gray-300 transition">
+        <Link to="/service-price" className="hover:text-gray-300 transition">
           SERVICES
         </Link>
 
@@ -48,9 +47,13 @@ function Nav() {
         </Link>
       </div>
 
-      {/* Mobile nav */}
       <div className="md:hidden flex justify-end items-start w-full relative p-4">
-        <button onClick={toggleMenu} className="z-20 text-black">
+        <button
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+          aria-expanded={isOpen}
+          className="z-20 text-black"
+        >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
@@ -67,7 +70,7 @@ function Nav() {
               ABOUT
             </Link>
             <Link
-              to="/ServicePrice"
+              to="/service-price"
               onClick={closeMenu}
               className="block hover:text-gray-300 transition"
             >
@@ -84,7 +87,7 @@ function Nav() {
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 }
 

@@ -16,12 +16,15 @@ function TopBar() {
             <img
               src="/logo.PNG"
               alt="Timeless Cleaning Logo"
-              className="h-12 sm:h-14 md:h-16 object-contain mr-2"
+              className="h-16 sm:h-14 md:h-16 object-contain"
             />
-            <div className="text-center lg:text-left">
+            <div className="text-start lg:text-left mt-6">
               <h1 className="font-michroma text-sky-600 text-xl sm:text-2xl">
-                Timeless Cleaning
+                Timeless
+                <br />
+                Cleaning
               </h1>
+
               <p className="text-gray-500 text-sm">
                 Reliable, Affordable, Always Sparkling
               </p>
@@ -35,11 +38,15 @@ function TopBar() {
 
         <div className="flex justify-center lg:justify-end">
           <a
-            className="font-michroma text-lg sm:text-xl text-sky-500"
+            className="font-michroma text-lg sm:text-sm md:text-xl hover:text-sky-70 flex items-center"
             href="tel:+447305959517"
           >
-            <FontAwesomeIcon icon={faPhone} className="mr-2" />
-            07305 959 517
+            <FontAwesomeIcon
+              icon={faPhone}
+              className="mr-2sm:text-sm bg-slate-200 p-2 rounded-full text-sky-600"
+              aria-hidden="true"
+            />
+            07305959517
           </a>
         </div>
       </div>

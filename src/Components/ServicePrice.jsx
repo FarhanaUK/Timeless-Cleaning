@@ -1,21 +1,22 @@
 function ServicePrice() {
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12 py-12 space-y-12">
-      {/* Section Header */}
-      <div className="text-center space-y-4">
+    <main className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12 py-12 space-y-12">
+      <header className="text-center space-y-4">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-michroma">
           Our Services
         </h1>
         <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
           Timeless Cleaning provides professional home cleaning services across
-          London. Choose from our flat cleaning packages, deep cleans, or
-          individual services.
+          London. Choose from flat cleaning packages, deep cleans, or individual
+          services.
         </p>
-      </div>
+      </header>
 
-      {/* Flat Cleaning Packages */}
-      <div className="space-y-6">
-        <h2 className="text-xl sm:text-2xl font-michroma text-blue-600 mb-4">
+      <section className="space-y-6" aria-labelledby="flat-cleaning-packages">
+        <h2
+          id="flat-cleaning-packages"
+          className="text-xl sm:text-2xl font-michroma text-blue-600 mb-4"
+        >
           Flat Cleaning Packages
         </h2>
 
@@ -55,7 +56,7 @@ function ServicePrice() {
               note: "5+ bed? Contact us for a custom quote.",
             },
           ].map((service, idx) => (
-            <div
+            <article
               key={idx}
               className="border p-4 sm:p-6 rounded-xl shadow-lg bg-white"
             >
@@ -70,14 +71,19 @@ function ServicePrice() {
                   {service.note}
                 </p>
               )}
-            </div>
+            </article>
           ))}
         </div>
-      </div>
+      </section>
 
-      {/* Same Day Jobs */}
-      <div className="border-l-4 border-yellow-500 bg-yellow-50 p-4 sm:p-6 rounded-xl shadow-md">
-        <h2 className="text-xl sm:text-2xl font-michroma text-yellow-700 mb-2">
+      <section
+        className="border-l-4 border-yellow-500 bg-yellow-50 p-4 sm:p-6 rounded-xl shadow-md"
+        aria-labelledby="same-day-jobs"
+      >
+        <h2
+          id="same-day-jobs"
+          className="text-xl sm:text-2xl font-michroma text-yellow-700 mb-2"
+        >
           Same Day Jobs
         </h2>
         <p className="text-sm sm:text-base">
@@ -88,11 +94,16 @@ function ServicePrice() {
           A percentage of this extra charge is paid back to the cleaner as a
           bonus.
         </p>
-      </div>
+      </section>
 
-      {/* Individual Cleaning Quotes */}
-      <div className="space-y-4">
-        <h2 className="text-xl sm:text-2xl font-michroma text-blue-600 mb-2">
+      <section
+        className="space-y-4"
+        aria-labelledby="individual-cleaning-quotes"
+      >
+        <h2
+          id="individual-cleaning-quotes"
+          className="text-xl sm:text-2xl font-michroma text-blue-600 mb-2"
+        >
           Individual Cleaning Quotes
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -111,23 +122,25 @@ function ServicePrice() {
             "Extractor: £25",
             "Fridge: £10",
           ].map((item, idx) => (
-            <div
+            <article
               key={idx}
               className="border p-3 sm:p-4 rounded-lg shadow bg-white text-sm sm:text-base"
             >
               {item}
-            </div>
+            </article>
           ))}
         </div>
-      </div>
+      </section>
 
-      {/* Minimum Booking Fee */}
-      <div className="text-center bg-green-50 p-4 sm:p-6 rounded-xl shadow-md">
+      <section
+        className="text-center bg-green-50 p-4 sm:p-6 rounded-xl shadow-md"
+        aria-label="Minimum Booking Fee"
+      >
         <p className="font-semibold text-base sm:text-lg">
           Minimum booking fee: £120 (up to 3 hours)
         </p>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 

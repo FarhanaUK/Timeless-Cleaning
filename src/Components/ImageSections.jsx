@@ -28,15 +28,15 @@ function ImageSections() {
         />
         <div className="text-center md:text-left max-w-xl space-y-4">
           <h1 className="text-2xl sm:text-3xl md:text-2xl text-gray-900 font-michroma font-bold">
-            Reliable, Safe & Eco-Friendly
+            Reliable and Trustworthy Cleaners You Can Count On
           </h1>
           <p className="text-base sm:text-lg text-gray-700">
-            Your safety and satisfaction are our top priorities. We use safe,
-            eco-friendly products and proven cleaning methods to protect your
-            property, family, and staff. Our team is fully trained,
-            detail-focused, and committed to exceeding expectations every time.
-            With us, you’ll get a professional service you can rely on. Clean
-            spaces and stress-free results.
+            Your safety and satisfaction are our top priorities. We use safe
+            products and proven cleaning methods to protect your property,
+            family, and staff. Our team is fully trained, detail-focused, and
+            committed to exceeding expectations every time. With us, you’ll get
+            a professional service you can rely on. Clean spaces and stress-free
+            results.
           </p>
         </div>
       </div>

@@ -1,6 +1,9 @@
 function TermsAndConditions() {
   return (
-    <main className="min-h-screen bg-gray-50 text-stone-800 px-4 py-8 sm:py-12">
+    <main
+      className="min-h-screen bg-gray-50 text-stone-800 px-4 py-8 sm:py-12"
+      aria-label="Terms and Conditions"
+    >
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-12">
         <header className="mb-6 sm:mb-8 text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-michroma text-stone-800">

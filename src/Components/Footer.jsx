@@ -65,7 +65,7 @@ function Footer() {
       </div>
 
       <div className="mt-8 text-center text-gray-400 text-sm">
-        © {new Date().getFullYear()} Bespoke Web Engineers. All rights reserved.
+        © {new Date().getFullYear()} Developed by Bespoke Web Engineers
       </div>
     </footer>
   );
