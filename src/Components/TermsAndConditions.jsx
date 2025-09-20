@@ -105,15 +105,15 @@ function TermsAndConditions() {
           <p className="text-sm sm:text-base text-gray-700">
             Email:{" "}
             <a
-              href="mailto:service.timelesscleaning@gmail.com"
+              href="mailto:info@timelesscleaning.co.uk"
               className="text-blue-600 hover:underline break-words"
             >
-              service.timelesscleaning@gmail.com
+              info@timelesscleaning.co.uk
             </a>
             <br />
             Phone:{" "}
-            <a href="tel:07305959517" className="text-blue-600 hover:underline">
-              07305-959-517
+            <a href="tel:07404809750" className="text-blue-600 hover:underline">
+              07404 809 750
             </a>
           </p>
 

@@ -35,10 +35,10 @@ function Nav() {
   return (
     <nav className="w-full flex justify-center mt-4">
       <div className="hidden md:flex text-gray-500 rounded-2xl px-8 py-3 space-x-10 shadow-lg">
-        <Link to="/about-us" className="hover:text-gray-300 transition">
+        <Link to="/about" className="hover:text-gray-300 transition">
           ABOUT
         </Link>
-        <Link to="/service-price" className="hover:text-gray-300 transition">
+        <Link to="/services" className="hover:text-gray-300 transition">
           SERVICES
         </Link>
 
@@ -63,14 +63,14 @@ function Nav() {
             className="absolute right-4 top-14 bg-black/95 text-white p-4 space-y-4 rounded-2xl shadow-lg z-50"
           >
             <Link
-              to="/about-us"
+              to="/about"
               onClick={closeMenu}
               className="block hover:text-gray-300 transition"
             >
               ABOUT
             </Link>
             <Link
-              to="/service-price"
+              to="/services"
               onClick={closeMenu}
               className="block hover:text-gray-300 transition"
             >

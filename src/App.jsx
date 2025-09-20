@@ -16,11 +16,11 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/service-price" element={<ServicePrice />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/services" element={<ServicePrice />} />
         <Route path="/contact" element={<ContactForm />} />
-        <Route path="/termsandconditions" element={<TermsAndConditions />} />
-        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/faqs" element={<Faqs />} />
       </Routes>
       <Footer />

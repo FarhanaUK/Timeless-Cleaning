@@ -16,25 +16,25 @@ function Footer() {
         <div className="space-y-2 text-center md:text-left">
           <h3 className="font-semibold mb-2">Quick Links</h3>
           <Link
-            to="/TermsAndConditions"
+            to="/terms-and-conditions"
             className="block hover:text-blue-400 transition-colors"
           >
             Terms & Conditions
           </Link>
           <Link
-            to="/PrivacyPolicy"
+            to="privacy-policy"
             className="block hover:text-blue-400 transition-colors"
           >
             Privacy Policy
           </Link>
           <Link
-            to="/FAQS"
+            to="/faqs"
             className="block hover:text-blue-400 transition-colors"
           >
             FAQ
           </Link>
           <Link
-            to="/Contact"
+            to="/contact"
             className="block hover:text-blue-400 transition-colors"
           >
             Contact

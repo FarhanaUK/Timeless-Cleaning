@@ -39,14 +39,15 @@ function TopBar() {
         <div className="flex justify-center lg:justify-end">
           <a
             className="font-michroma text-lg sm:text-sm md:text-xl hover:text-sky-70 flex items-center"
-            href="tel:+447305959517"
+            href="tel:+447404809750"
+            aria-label="Call Timeless Cleaning at 07404809750"
           >
             <FontAwesomeIcon
               icon={faPhone}
               className="mr-2sm:text-sm bg-slate-200 p-2 rounded-full text-sky-600"
               aria-hidden="true"
             />
-            07305959517
+            Call Now
           </a>
         </div>
       </div>

@@ -1,4 +1,4 @@
-function FAQs() {
+function Faqs() {
   const faqs = [
     {
       question: "What areas do you cover?",
@@ -10,11 +10,7 @@ function FAQs() {
       answer:
         "No, our cleaners bring their own professional-grade products and equipment. If you prefer us to use your supplies, just let us know.",
     },
-    {
-      question: "Are your cleaners insured?",
-      answer:
-        "Yes. All our cleaners are fully vetted and insured for your peace of mind.",
-    },
+
     {
       question: "How do I book a cleaning?",
       answer:
@@ -67,4 +63,4 @@ function FAQs() {
   );
 }
 
-export default FAQs;
+export default Faqs;
