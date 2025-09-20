@@ -53,7 +53,10 @@ function ContactForm() {
       </p>
 
       {showSuccess && (
-        <div className="fixed top-20 sm:top-32 left-1/2 transform -translate-x-1/2 bg-white border border-green-700 rounded-lg shadow-lg p-6 w-11/12 sm:w-80 text-center z-50">
+        <div
+          role="alert"
+          className="fixed top-20 sm:top-32 left-1/2 transform -translate-x-1/2 bg-white border border-green-700 rounded-lg shadow-lg p-6 w-11/12 sm:w-80 text-center z-50"
+        >
           <div className="flex flex-col items-center space-y-2">
             <span className="text-green-600 text-4xl">✔</span>
             <p className="font-bold text-lg text-green-700">Success</p>
@@ -128,12 +131,12 @@ function ContactForm() {
         <p className="py-4 text-gray-500 text-center text-sm sm:text-base">
           Prefer to write? Send us an email and we'll get back to you fast:{" "}
           <a
-            href="mailto:Timelesscleaning@gmail.com"
+            href="mailto:info@timlesscleaning.co.uk"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-400"
           >
-            Timelesscleaning@gmail.com
+            info@timlesscleaning.co.uk
           </a>
         </p>
       </div>

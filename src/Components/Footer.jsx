@@ -48,6 +48,7 @@ function Footer() {
               href="https://www.instagram.com/timelesscleanings/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Follow Timeless Cleaning on Instagram"
               className="bg-pink-500 p-3 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
             >
               <FaInstagram size={24} />
@@ -56,6 +57,7 @@ function Footer() {
               href="https://www.facebook.com/profile.php?id=61574489914626"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Follow Timeless Cleaning on Facebook"
               className="bg-blue-600 p-3 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
             >
               <FaFacebook size={24} />

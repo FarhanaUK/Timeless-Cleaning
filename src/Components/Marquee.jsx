@@ -55,9 +55,9 @@ function Marquee() {
         }
       `}</style>
 
-      <h1 className="text-center font-bold text-2xl sm:text-3xl lg:text-4xl mt-8 mb-6 text-gray-800">
+      <h2 className="text-center font-bold text-2xl sm:text-3xl lg:text-4xl mt-8 mb-6 text-gray-800">
         See what customers have to say
-      </h1>
+      </h2>
 
       <div className="flex flex-col sm:flex-row items-center justify-center mb-8 gap-2">
         <p className="text-blue-600 text-2xl sm:text-3xl lg:text-4xl font-bold">
