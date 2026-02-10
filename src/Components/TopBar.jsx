@@ -6,26 +6,20 @@ import { Link } from "react-router-dom";
 function TopBar() {
   return (
     <div className="w-full bg-white shadow-sm px-4 sm:px-8 md:px-12 py-3">
-      <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
+      <div className="flex flex-col gap-4 md:gap-6 lg:flex-row lg:justify-between lg:items-center">
         <div className="flex flex-col items-center lg:flex-row lg:items-center">
           <Link
             to="/"
             aria-label="Timeless Cleaning homepage"
             className="cursor-pointer flex items-center mb-2 lg:mb-0"
           >
-            <img
-              src="/logo.PNG"
-              alt="Timeless Cleaning Logo"
-              className="h-16 sm:h-14 md:h-16 object-contain"
-            />
-            <div className="text-start lg:text-left mt-6">
-              <h1 className="font-michroma text-sky-600 text-xl sm:text-2xl">
-                Timeless
-                <br />
-                Cleaning
+            <div className="text-center lg:text-left mt-6">
+              <h1 className="font-michroma text-sky-600 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-left">
+                <span className="lg:block">Timeless&nbsp;</span>
+                <span className="lg:block">Cleaning</span>
               </h1>
 
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-500 text-sm mt-2">
                 Reliable, Affordable, Always Sparkling
               </p>
             </div>
@@ -36,7 +30,7 @@ function TopBar() {
           <Nav />
         </div>
 
-        <div className="flex justify-center lg:justify-end">
+        <div className="flex justify-center lg:justify-end mt-2 md:mt-4 lg:mt-0">
           <a
             className="font-michroma text-lg sm:text-sm md:text-xl hover:text-sky-70 flex items-center"
             href="tel:+447404809750"

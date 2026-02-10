@@ -11,7 +11,7 @@ import TermsAndConditions from "./Components/TermsAndConditions";
 
 function App() {
   return (
-    <div className="font-urbanist w-full overflow-x-hidden">
+    <div className="font-urbanist w-full overflow-x-hidden pt-10 md:pt-0">
       <TopBar />
 
       <Routes>

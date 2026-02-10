@@ -33,8 +33,8 @@ function Nav() {
   }, [isOpen]);
 
   return (
-    <nav className="w-full flex justify-center mt-4">
-      <div className="hidden md:flex text-gray-500 rounded-2xl px-8 py-3 space-x-10 shadow-lg">
+    <nav className="w-full flex justify-center md:mt-4 fixed md:static top-0 left-0 bg-white z-50">
+      <div className="hidden md:flex text-gray-500 rounded-2xl px-8 py-3 space-x-10 shadow-lg ">
         <Link to="/about" className="hover:text-gray-300 transition">
           ABOUT
         </Link>

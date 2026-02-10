@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="px-4 sm:px-6 md:px-6">
       {/* Main page heading */}
-      <h1 className="flex justify-center font-bold text-4xl mt-12 font-michroma">
+      <h1 className="flex justify-center font-bold text-3xl mt-12 font-michroma">
         Services
       </h1>
 
